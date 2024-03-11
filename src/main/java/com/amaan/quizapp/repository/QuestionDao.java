@@ -11,4 +11,6 @@ import java.util.List;
 public interface QuestionDao extends JpaRepository<Question, Integer> { //What type of data are we working with and the type of primary key
 
    List<Question> findByCategory(String category);
+
+   List<Question> findByDifficultyLevel(String difficultyLevel);
 }
